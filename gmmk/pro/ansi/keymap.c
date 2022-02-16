@@ -32,6 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ALL (LCTL(KC_A))
 #define ULINE (LALT(KC_UP))
 #define DLINE (LALT(KC_DOWN))
+#define GOLINE (LCTL(KC_G))
 
 enum {
 	SELECT = SAFE_RANGE,
@@ -76,8 +77,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [2] = LAYOUT(
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
-        _______, _______, SELECT,  EMOJI,   _______, _______, REDO,    LWORD,   KC_UP,   RWORD,   _______, _______, _______, _______,          _______,
-        _______, ALL,     KC_LSFT, KC_DEL,  _______, _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  _______,          _______,          _______,
+        _______, _______, _______, EMOJI,   _______, _______, REDO,    LWORD,   KC_UP,   RWORD,   _______, _______, _______, _______,          _______,
+        _______, ALL,     SELECT,  KC_DEL,  _______, GOLINE, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  _______,          _______,          _______,
         _______,          UNDO,    CUT,     COPY,    PASTE,   _______, DLINE,   ULINE,   _______, _______, _______,          _______, MAXI,    _______,
         _______, _______, _______,                            _______,                            _______, _______, _______, LEFTI,   MINI,    RGHTI
     ),
